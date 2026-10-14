@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,19 +21,20 @@
   <nav>
     <div class="nav-links">
       <a href="index.html">Home</a>
-      <a href="about.html">About Me</a>
+      <a href="about.html" aria-current="page">About Me</a>
       <a href="work.html">My Work</a>
       <a href="setup.html">Desk Setup</a>
     </div>
 
     <div class="dark-mode">
       <input type="checkbox" id="dark-mode-toggle">
-      <label for="dark-mode-toggle">🌙</label>
+      <label for="dark-mode-toggle" aria-label="Toggle dark mode">🌙</label>
     </div>
   </nav>
 
   <header>
     <h1>About Me</h1>
+    <p>A little bit about who I am and what I enjoy.</p>
   </header>
 
   <main class="text-box-1">
@@ -48,63 +50,145 @@
       </p>
     </section>
 
-    <hr>
-
     <section class="text-box">
       <h2>A Few Things I'm Into</h2>
 
       <ul class="skills-list">
         <li class="skill-pill">
-          The Legend of Zelda
-          <span class="skill-detail">: specifically, Ocarina of Time</span>
-        </li>
-
-        <li class="skill-pill">
-          Playing the trumpet
-          <span class="skill-detail">: I have played it for 4 years.</span>
-        </li>
-
-        <li class="skill-pill">
-          Learning technological skills
+          <strong>The Legend of Zelda</strong>
           <span class="skill-detail">
-            : I am currently learning Unity and Blender.
+            Specifically, Ocarina of Time.
+          </span>
+        </li>
+
+        <li class="skill-pill">
+          <strong>Playing the trumpet</strong>
+          <span class="skill-detail">
+            I've been playing for 4 years.
+          </span>
+        </li>
+
+        <li class="skill-pill">
+          <strong>Learning technological skills</strong>
+          <span class="skill-detail">
+            I'm currently learning Unity and Blender.
           </span>
         </li>
       </ul>
 
-      <button id="fact-btn">Fun Fact</button>
+      <div class="fun-fact-box">
+        <h3>🎺 Did You Know?</h3>
 
-      <p id="fun-fact">
-        Last year, I got a "Most Improved" award for band.
-      </p>
+        <p id="fun-fact">
+          Last year, I got a "Most Improved" award for band.
+        </p>
+
+        <button id="fact-btn">Fun Fact</button>
+      </div>
     </section>
 
-    <hr>
     <section class="text-box">
       <h2>20 Questions About Me</h2>
 
-      <p>
-        <strong>Preferred name:</strong> Sean<br>
-        <strong>Favorite subject:</strong> Band<br>
-        <strong>A hobby that I spend a lot of time on:</strong> Gaming<br>
-        <strong>Favorite game:</strong> The Legend of Zelda: Ocarina of Time<br>
-        <strong>Instrument/Sport that I play:</strong> I play the trumpet and I also play baseball.<br>
-        <strong>A skill I'm proud of:</strong> Increasing my range on the trumpet.<br>
-        <strong>Favorite food:</strong> Tacos<br>
-        <strong>If you could have a superpower, what would it be?</strong> Teleportation. Let's be real here.<br>
-        <strong>Weird food combination I genuinely enjoy:</strong> Ritz crackers and Western Family red salsa.<br>
-        <strong>Pets:</strong> I have had two cats. My first cat, Pepe, died when I was 1. Flitwick is still alive today.<br>
-        <strong>Goal for this course:</strong> To learn more about coding.<br>
-        <strong>Something I'm good at outside of school:</strong> I am good at reading and following recipes.<br>
-        <strong>Place I would go to in the world:</strong> Denmark, the home of the LEGO House.<br>
-        <strong>Something many people don't know about me:</strong> My first and middle names are Irish.<br>
-        <strong>Morning bird or night owl?</strong> I think I am more productive at night than in the morning.<br>
-        <strong>Favorite way to spend a weekend:</strong> On Saturday, I do any homework or personal work and then spend the rest of the weekend gaming.<br>
-        <strong>Show I'd recommend:</strong> The Mandalorian<br>
-        <strong>Something I want to produce by the end of the course:</strong> A cool game using the new skills I've learned.
-      </p>
-    </section>
+      <div class="questions-list">
 
+        <p>
+          <strong>Preferred name</strong>
+          <span>Sean</span>
+        </p>
+
+        <p>
+          <strong>Favorite subject</strong>
+          <span>Band</span>
+        </p>
+
+        <p>
+          <strong>A hobby I spend a lot of time on</strong>
+          <span>Gaming</span>
+        </p>
+
+        <p>
+          <strong>Favorite game</strong>
+          <span>The Legend of Zelda: Ocarina of Time</span>
+        </p>
+
+        <p>
+          <strong>Instrument or sport I play</strong>
+          <span>I play the trumpet and baseball.</span>
+        </p>
+
+        <p>
+          <strong>A skill I'm proud of</strong>
+          <span>Increasing my range on the trumpet.</span>
+        </p>
+
+        <p>
+          <strong>Favorite food</strong>
+          <span>Tacos</span>
+        </p>
+
+        <p>
+          <strong>If I could have a superpower</strong>
+          <span>Teleportation. Let's be real here.</span>
+        </p>
+
+        <p>
+          <strong>A weird food combination I enjoy</strong>
+          <span>Ritz crackers and Western Family red salsa.</span>
+        </p>
+
+        <p>
+          <strong>Pets</strong>
+          <span>
+            I've had two cats. My first cat, Pepe, died when I was 1.
+            Flitwick is still alive today.
+          </span>
+        </p>
+
+        <p>
+          <strong>Goal for this course</strong>
+          <span>To learn more about coding.</span>
+        </p>
+
+        <p>
+          <strong>Something I'm good at outside school</strong>
+          <span>Reading and following recipes.</span>
+        </p>
+
+        <p>
+          <strong>A place I'd like to visit</strong>
+          <span>Denmark, the home of the LEGO House.</span>
+        </p>
+
+        <p>
+          <strong>Something many people don't know about me</strong>
+          <span>My first and middle names are Irish.</span>
+        </p>
+
+        <p>
+          <strong>Morning bird or night owl?</strong>
+          <span>I'm more productive at night than in the morning.</span>
+        </p>
+
+        <p>
+          <strong>My ideal weekend</strong>
+          <span>
+            On Saturday, I do homework or personal work and then
+            spend the rest of the weekend gaming.
+          </span>
+        </p>
+
+        <p>
+          <strong>A show I'd recommend</strong>
+          <span>The Mandalorian</span>
+        </p>
+
+        <p>
+          <strong>Something I want to create by the end of the course</strong>
+          <span>A cool game using the new skills I've learned.</span>
+        </p>
+
+      </div>
     </section>
 
   </main>
